@@ -1,0 +1,28 @@
+class Paper {
+    constructor(x,y,width,height){
+
+   var options = {
+
+   isStatic :false,
+
+   'restitution' :0.3,
+   'friction' :0.5,
+   'density' :1.2,
+   
+   }
+   
+   this.body = Bodies.circle(x,y,redius,options);
+
+   this.redius = redius
+  world.add(world,this,this.body);
+
+    }
+  Display();
+ rectMode(CENTER);
+ fill(yellow);
+ 
+rect(this.body=Position.x,this.body=Position.y,this.width,this.height);
+
+  }
+
+}
