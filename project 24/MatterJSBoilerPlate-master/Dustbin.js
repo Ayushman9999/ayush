@@ -1,13 +1,13 @@
-class Ground{
+class Dustbin{
     constructor(x,y,width,height){
 
    var options = {
 
-   isStatic :true,
+   isStatic : true,
 
    'restitution' :0,
-   'friction' :0,
-   'density' :1,
+   'friction' :1,
+   'density' :0.1,
    
    }
    
@@ -16,13 +16,15 @@ class Ground{
    this.width = width;
    this.height = height;
   World.add(world,this.body);
+    
 
     }
   Display(){
  rectMode(CENTER);
  fill(255);
  
-rect(this.body=Position.x,this.body.Position.y,this.width,this.height);
+rect(this.body.Position.x, this.body.Position.y, this.width,  this.height);
 
   }
-};
+
+}
